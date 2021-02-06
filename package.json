@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "dev": "parcel src/index.html --out-dir build/debug",
+    "build": "parcel build src/index.html --out-dir build/release --public-url ./"
+  },
+  "name": "One-Hundred-History",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KimHunJin/One-Hundred-History.git",
+  "author": "HunJin Kim <ysg01129@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.11.0",
+    "react": "^17.0.1",
+    "react-apollo": "^3.1.5",
+    "react-apollo-hooks": "^0.5.0",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.1.3"
+  }
+}

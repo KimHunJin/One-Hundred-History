@@ -1,0 +1,22 @@
+import ReactDOM from "react-dom";
+import React from "react";
+import {Main} from "~/Main";
+
+
+export class App {
+    private _appName: string = "Awesome TypeScript, React, Parcel App!";
+
+    constructor() {
+        this.render();
+    }
+
+    private render(): void {
+        ReactDOM.render(React.createElement(Main, {app: this}), document.getElementById("root"));
+    }
+
+    public get appName(): string {
+        return this._appName;
+    }
+}
+
+new App();
